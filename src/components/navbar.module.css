@@ -1,0 +1,172 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--light);
+}
+.container {
+  height: 64px;
+  width: min(100%, 1200px);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.logo img {
+  width: 48px;
+  aspect-ratio: 1;
+}
+.navBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.logo span {
+  font-size: 20px;
+  color: var(--primary);
+  font-weight: 300;
+  white-space: nowrap;
+}
+.navBox a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--grey);
+}
+.navLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 32px;
+}
+.hideLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 32px;
+}
+.userBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--grey);
+  height: 100%;
+  padding: 0 16px 0 8px;
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+.userBox:hover {
+  cursor: pointer;
+  background-color: var(--light);
+  transition: all 0.5s;
+}
+.userBox img {
+  width: 48px;
+  aspect-ratio: 1;
+}
+.menuBox {
+  display: none;
+}
+.menuBox:hover {
+  cursor: pointer;
+}
+.menuBox img {
+  width: 48px;
+  aspect-ratio: 1;
+}
+.topBar {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* Tablet */
+  .navbar {
+    height: 64px;
+  }
+  .topBar {
+    display: flex;
+    width: 100%;
+    height: 64px;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-bottom: 1px solid var(--light);
+  }
+  .closeBox:hover {
+    cursor: pointer;
+  }
+  .closeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .closeBox img {
+    width: 48px;
+    aspect-ratio: 1;
+  }
+  .hideLinks {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    right: -260px;
+    height: 100dvh;
+    width: min(100%, 260px);
+    flex-direction: column;
+    padding: 0;
+    background-color: var(--white);
+    transition: all 0.5s;
+  }
+
+  .menuBox {
+    display: unset;
+    padding: 16px;
+  }
+  .navLinks {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100dvh;
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    background-color: var(--white);
+    transition: all 0.5s;
+  }
+  .navBox {
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .navBox a {
+    width: 100%;
+    padding: 16px 32px;
+    /* border-top: 1px solid var(--light); */
+    border-bottom: 1px solid var(--light);
+  }
+  .userBox {
+    border-top: 2px solid var(--light);
+    border-radius: 0px;
+    padding: 24px;
+    justify-content: flex-start;
+    width: 100%;
+    height: unset;
+  }
+}
