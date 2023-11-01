@@ -76,7 +76,7 @@ const Dashboard = () => {
   return (
     <div className="default-container">
       <div className={style.contentBox}>
-        <h1>Progress Courses ({coursesData?.length})</h1>
+        <h1>Courses in progress ({coursesData?.length})</h1>
         <p>All the course that are in progress.</p>
       </div>
       <div className={style.cards}>

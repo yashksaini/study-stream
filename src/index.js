@@ -5,7 +5,6 @@ import App from "./App";
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import "./vars.css";
-import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,5 +12,3 @@ root.render(
     <App />
   </Provider>
 );
-
-serviceWorkerRegistration.register();

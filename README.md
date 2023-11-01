@@ -6,6 +6,6 @@ To clone and run the project locally, follow these steps:
 2. Install dependencies: `npm install`
 3. Start the development server: `npm start`
 
-
 ## Live Application
+
 - Live Application: [Study Stream](https://study-stream.netlify.app/)
